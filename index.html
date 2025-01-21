@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="icon" href="imagenes/favicon_io/favicon-16x16.png" type="image/png">
+     <script src="Pa╠ügina.js"></script>
+    <link rel="stylesheet" href="Pa╠ügina.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><img src="imagen.webp" alt="si" class="pe">BIOMATERIALES</title>
+</head>
+<body class="pes" >
+<header class="header">
+  <nav class="nav">
+    <div class="logo ">BIOMATERIALES</div>
+    <ul class="menu">
+       <li><a href="index1.html">Metales</a></li>
+       <li><a href="index2.html">Polímeros</a></li>
+       <li><a href="index3.html">Cerámicos</a></li>
+       <li><a href="index4.html">Compuestos</a></li>
+       <li><a href="https://es.wikipedia.org/wiki/Biomaterial#:~:text=Un%20biomaterial%20es%20cualquier%20sustancia,biomateriales%20tienen%20unos%20cincuenta%20años." target="_blank">Mas información</a></li>
+    </ul>
+  </nav>
+</header>
+    
+   <main style="padding-top: 70px;" class="scrol">
+    
+    <section>
+     
+      <h1 class="fe" >TIPOS DE BIOMATERIALES</h1><br>
+    <h2 class="fe1">¿Qué son los biomateriales?</h2><br>
+    
+      <h3 class="fe2" style="margin-right: 200px; margin-left: 200px;">Los biomateriales desempeñan un papel integral en la medicina de hoy: restablecen la función y facilitan la curación de
+    las personas. Se usan en
+    aplicaciones médicas para apoyar, mejorar o reemplazar tejido dañado o una función biológica. El campo ha crecido significativamente en la última década debido a los descubrimientos en ingeniería de tejidos,
+    medicina regenerativa y más..</h3>
+    <h2 class="m">Metales</h2>
+    <a href="index1.html"><img src="imagenes/pro.webp" alt="" class="ce" ></a> 
+  <h2 class="pol">
+    Polímeros
+  </h2>
+   <a href="index2.html"><img class="ce1"
+    src="imagenes/eye.png" alt="https://plasticlemag.es/Los-plasticos-tienden-la-mano-a-las-protesis"></a> 
+  
+<h2 class="cer">
+    Cerámicos
+</h2>
+   <a href="index3.html"><img class="ce2"
+    src="https://www.caballerodentalclinic.com/wp-content/uploads/2016/01/protesis-1.jpg" alt="chat gpt"></a>
+
+   <h2 class="com"> Compuestos</h2>
+   <a href="index4.html" >
+   <img class="ce3"
+    src="https://dentalborras.com/wp-content/uploads/2024/03/clinica-dental-borras-benicarlo-hibrida-implantes-protesis-05-scaled.jpg" alt="https://dentalborras.com/protesis-completas-implantosoportadas-de-metal-resina-hibridas-fijas-superior-e-inferior/">
+   </a>
+  </section>
+
+  </main>
+  <footer>
+<p id="coordenadas_usuario"></p>
+  <button onclick="obtenerLocalizacion()">Obtener coordenadas</button>
+  <p id="coordenadas_usuario"></p>
+  <script>
+    var mostrar_coordenadas = document.getElementById("coordenadas_usuario");
+    function obtenerLocalizacion() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(mostrarPosicion);
+      } else {
+        mostrar_coordenadas.innerHTML = "Tu navegador no soporta esta tecnologia";
+      }
+    }
+    function mostrarPosicion(posicion_usuario) {
+      mostrar_coordenadas.innerHTML = "Latitud: " + posicion_usuario.coords.latitude +
+        "<br>Longitud: " + posicion_usuario.coords.longitude;
+    }
+  </script>
+  <p>Acepta la solicitud para ver tu ubicación</p>
+  <cite>Los datos no serán guardados para recopilar ninguna información</cite>
+  </p>
+  </footer>
+</body>
+</html>
